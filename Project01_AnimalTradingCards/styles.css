@@ -1,28 +1,37 @@
+/* add your CSS here */
 body {
-    font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 
 }
 
 #trade {
-  width: 350px;
+  max-width: 300px;
+  background-color: #e95d64;
 }
 
-.border {
-    border: 1px solid #222;
-    padding: 20px 15px 20px 15px;
+.border {  
+  border: 2px solid #410f13;
+  padding: 20px 15px 20px 15px;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 .image {
-    width: 300px;
-    padding: 0 0 20px 20px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #410f13;
 }
 
 .italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 ul {
