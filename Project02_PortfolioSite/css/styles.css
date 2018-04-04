@@ -1,0 +1,93 @@
+/* basic body to visualize the html build. */
+html, body, div {
+    margin: 0;
+    padding: 0;
+  }
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+    font-family: 'Roboto', sans-serif;
+/*     margin-left: 10%; margin-right: 10%; */
+}
+
+.box {
+    min-height: 5em;
+}
+
+/* Header */
+header {
+    display: inline-block;
+}
+
+.hvl_logo {
+    width: 3em;
+    height: 3em;
+    background-color: blue;
+}
+
+h1 {
+    color: white;
+    background-color: blueviolet;
+}
+
+h4 {
+    color: white;
+    background-color: brown;
+}
+
+/* Section Work*/
+.work {
+    background-color: aqua;
+
+}
+
+img {
+    width: 5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    height: 5em;
+    background-color: yellow;
+}
+
+/* Flexbox setup: Layout Shifter */
+.main_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100%;
+}
+
+/* .hvl_logo {
+    width: 20%;
+}
+
+.nav_container {
+    width: 80%;
+}
+
+.feature {
+    width: 33.666%;
+} */
+
+
+/* @Media setup for mobile */
+@media screen and (max-width: 400px) {
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 768) {
+
+}
+
+@media screen and (max-width: 769px) {
+
+}
