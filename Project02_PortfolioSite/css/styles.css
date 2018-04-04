@@ -1,5 +1,5 @@
 /* basic body to visualize the html build. */
-html, body, div {
+html, body {
     margin: 0;
     padding: 0;
   }
@@ -11,27 +11,45 @@ body {
 /*     margin-left: 10%; margin-right: 10%; */
 }
 
+.main_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .box {
+    width: 100%;
     min-height: 5em;
 }
 
-/* Header */
+/* Section Header */
 header {
-    display: inline-block;
+    display: inherit;
+}
+
+.hero_img {
+    display: block;
 }
 
 .hvl_logo {
-    width: 3em;
-    height: 3em;
+    height: 100%;
+    width: 20%;
     background-color: blue;
 }
 
+.nav_container {
+    width: 80%;
+}
+
 h1 {
+    margin: 0;
+    padding: 0;
     color: white;
     background-color: blueviolet;
 }
 
 h4 {
+    margin: 0;
+    padding: 0;
     color: white;
     background-color: brown;
 }
@@ -42,6 +60,15 @@ h4 {
 
 }
 
+.headline_work {
+    display: block;
+}
+
+.feature {
+    width: 33.666%;
+    margin-right: 1.5em;
+}
+
 img {
     width: 5em;
 }
@@ -50,34 +77,11 @@ a {
     text-decoration: none;
 }
 
-/* Footer */
+/* Section Footer */
 footer {
     height: 5em;
     background-color: yellow;
 }
-
-/* Flexbox setup: Layout Shifter */
-.main_container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.box {
-    width: 100%;
-}
-
-/* .hvl_logo {
-    width: 20%;
-}
-
-.nav_container {
-    width: 80%;
-}
-
-.feature {
-    width: 33.666%;
-} */
-
 
 /* @Media setup for mobile */
 @media screen and (max-width: 400px) {
