@@ -4,38 +4,36 @@ html, body {
     padding: 0;
   }
 
+h1, h2, h3, h4, h5, h6, a, p {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body {
     font-family: 'Roboto', sans-serif;
-/*     margin-left: 10%; margin-right: 10%; */
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    vertical-align: middle;
-    height: auto;
-}
-
-.page-wrap {
-    width: 60em;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.page-wrap > * {
-    display: flex;
-    flex: 1 100%;
+    margin-left: 10%; margin-right: 10%;
 }
 
 /* Section Header */
 header {
-    height: 6.25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-around;
+
     margin-top: 1.5em;
     margin-bottom: 3em;
     padding-bottom: 3em;
@@ -43,31 +41,19 @@ header {
 }
 
 .header_logo {
-    width: 20%;
-    order: 1;
+    height: 6.25em;
     padding: 0.5em;
+    margin-right: 1.5em;
 }
 
 .nav_container {
-    width: 80%;
-    order: 2;
     text-align: right;
     padding: 0.5em;
 }
 
-h1 {
-    margin: 0;
-    padding: 0;
-}
-
-h4 {
-    margin: 0;
-    padding: 0;
-}
-
 .logo_img {
-    width: 80px;
-    height: 80px;
+    width: 5em;
+    height: 5em;
 }
 
 /* Section Hero Image*/
@@ -77,12 +63,43 @@ h4 {
     margin-bottom: 3em;
     background-image: url("../img/center-theme.jpg");
     background-size: cover;
+    background-position: center;
+    clear: both;
 }
 
 /* Section Work*/
+section {
+    margin-bottom: 3em;
+}
+
+.work-wrap {
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+}
+
 .headline_work {
     color: #7d97ad;
 
+}
+
+.feature {
+    flex: 3 100%;
+    align-items: center;
+    display: block;
+    align-content: stretch;
+    justify-content: space-around;
+
+    margin-right: 1em;
+}
+
+.feature:last-of-type {
+    margin-right: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
 }
 
 /* Section Footer */
@@ -90,6 +107,11 @@ footer {
     height: 5em;
     background-color: yellow;
 }
+
+.logo_udacity {
+    width: 6em;
+}
+
 
 /* @Media setup for mobile */
 @media screen and (max-width: 400px) {
