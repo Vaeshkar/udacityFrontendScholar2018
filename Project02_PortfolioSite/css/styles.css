@@ -142,7 +142,6 @@ img {
 footer {
     display: block;
     text-align: center;
-    height: 5em;
     border-top: 4px solid #7d97ad;
     margin-top: 3em;
     padding: 3em 1em;
@@ -154,15 +153,11 @@ footer {
     margin-right: auto;
     margin-bottom: 1em;
 }
-/* 
-.logo_udacity {
-    width: 6em;
-} */
 
 
 /* @Media setup for mobile, Tablet and Desktop */
 @media screen and (max-width: 425px) {
-    /* autoflow the width, controlled by padding */
+    /* autoflow the width, controlled by padding, no width needed. */
     body {
         text-align: center;
     }
