@@ -142,7 +142,8 @@ img {
 footer {
     display: block;
     text-align: center;
-    border-top: 4px solid #7d97ad;
+    background-color: #7d97ad;
+    border-top: 6px solid #02b3e4;
     margin-top: 3em;
     padding: 3em 1em;
 }
@@ -152,6 +153,26 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
+}
+
+.github {
+    padding: 0.5em 0;
+    margin-top: 0.75em;
+    margin-right: 25%;
+    margin-bottom: 0.75em;
+    margin-left: 25%;
+    border-bottom: 1px solid #2d3c49;
+    border-top: 1px solid #2d3c49;
+    transition: all 0.8s;
+}
+
+.github:hover {
+    border-top: 1px solid #02b3e4;
+    border-bottom: 1px solid #02b3e4;
+}
+
+.copywright {
+    margin-top: 1em;
 }
 
 
